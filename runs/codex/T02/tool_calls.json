@@ -1,0 +1,86 @@
+[
+  {
+    "tool": "get_current_appointment",
+    "arguments": {
+      "appointment_id": "A001"
+    },
+    "result": {
+      "appointment_id": "A001",
+      "patient_id": "P001",
+      "provider_id": "D001",
+      "slot_id": "S090",
+      "start": "2026-09-10T09:00:00",
+      "status": "booked"
+    }
+  },
+  {
+    "tool": "get_patient",
+    "arguments": {
+      "patient_id": "P001"
+    },
+    "result": {
+      "patient_id": "P001",
+      "name": "Alex Morgan",
+      "insurance": "BlueShield",
+      "age": 26,
+      "preferred_location": "Downtown"
+    }
+  },
+  {
+    "tool": "get_provider",
+    "arguments": {
+      "provider_id": "D001"
+    },
+    "result": {
+      "provider_id": "D001",
+      "name": "Dr. Lee",
+      "specialty": "dermatology",
+      "accepted_insurance": [
+        "BlueShield",
+        "Aetna"
+      ],
+      "location": "Downtown",
+      "pediatric_eligible": false
+    }
+  },
+  {
+    "tool": "search_available_slots",
+    "arguments": {
+      "appointment_id": "A001",
+      "date": "2026-09-16",
+      "weekday": null,
+      "min_hour": 17,
+      "max_hour": null,
+      "same_provider": true
+    },
+    "result": []
+  },
+  {
+    "tool": "decline_reschedule",
+    "arguments": {
+      "appointment_id": "A001",
+      "reason": "No available slot on 2026-09-16 after 5 PM with the same provider; original appointment preserved."
+    },
+    "result": {
+      "status": "declined",
+      "decline": {
+        "appointment_id": "A001",
+        "reason": "No available slot on 2026-09-16 after 5 PM with the same provider; original appointment preserved."
+      }
+    }
+  },
+  {
+    "tool": "list_appointments",
+    "arguments": {},
+    "result": [
+      {
+        "appointment_id": "A001",
+        "patient_id": "P001",
+        "provider_id": "D001",
+        "slot_id": "S090",
+        "start": "2026-09-10T09:00:00",
+        "status": "booked"
+      }
+    ]
+  }
+]

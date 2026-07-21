@@ -1,0 +1,22 @@
+{
+  "task_id": "H02",
+  "task_name": "Conditional change requiring true no-op",
+  "suite": "hard",
+  "skill": "conditional action and no-op behavior",
+  "expected_action": "noop",
+  "expected_slot_id": null,
+  "final_slot_id": "SH200",
+  "passed": true,
+  "reasons": [],
+  "n_tool_calls": 4,
+  "n_failed_tool_calls": 0,
+  "valid_candidates": [],
+  "agent": "claude-haiku",
+  "agent_kind": "claude",
+  "foundation_model": "haiku",
+  "exit_code": 0,
+  "timed_out": false,
+  "wall_seconds": 27.4,
+  "cost_usd": 0.031560500000000005,
+  "output_tokens": 1532
+}

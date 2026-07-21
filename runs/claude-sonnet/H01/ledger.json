@@ -1,0 +1,24 @@
+{
+  "appointments": [
+    {
+      "appointment_id": "A101",
+      "patient_id": "P001",
+      "provider_id": "D003",
+      "slot_id": "SH103",
+      "start": "2026-10-13T14:00:00",
+      "status": "booked"
+    }
+  ],
+  "reschedule_history": [
+    {
+      "appointment_id": "A101",
+      "old_slot_id": "SH100",
+      "new_slot_id": "SH103",
+      "old_start": "2026-10-20T10:00:00",
+      "new_start": "2026-10-13T14:00:00",
+      "old_provider_id": "D001",
+      "new_provider_id": "D003"
+    }
+  ],
+  "declines": []
+}

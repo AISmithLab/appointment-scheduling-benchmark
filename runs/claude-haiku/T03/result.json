@@ -1,0 +1,23 @@
+{
+  "task_id": "T03",
+  "task_name": "Insurance mismatch trap",
+  "skill": "insurance constraint",
+  "expected_action": "reschedule",
+  "expected_slot_id": "S202",
+  "final_slot_id": "S202",
+  "passed": true,
+  "reasons": [],
+  "n_tool_calls": 8,
+  "n_failed_tool_calls": 1,
+  "valid_candidates": [
+    "S202"
+  ],
+  "agent": "claude-haiku",
+  "agent_kind": "claude",
+  "foundation_model": "haiku",
+  "exit_code": 0,
+  "timed_out": false,
+  "wall_seconds": 31.41,
+  "cost_usd": 0.036294999999999994,
+  "output_tokens": 2031
+}

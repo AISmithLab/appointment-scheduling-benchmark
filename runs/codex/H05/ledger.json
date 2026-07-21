@@ -1,0 +1,32 @@
+{
+  "appointments": [
+    {
+      "appointment_id": "A501",
+      "patient_id": "P001",
+      "provider_id": "D001",
+      "slot_id": "SH502",
+      "start": "2026-10-16T15:00:00",
+      "status": "booked"
+    },
+    {
+      "appointment_id": "A599",
+      "patient_id": "P001",
+      "provider_id": "D006",
+      "slot_id": "SH599",
+      "start": "2026-10-16T14:00:00",
+      "status": "booked"
+    }
+  ],
+  "reschedule_history": [
+    {
+      "appointment_id": "A501",
+      "old_slot_id": "SH500",
+      "new_slot_id": "SH502",
+      "old_start": "2026-10-30T10:00:00",
+      "new_start": "2026-10-16T15:00:00",
+      "old_provider_id": "D001",
+      "new_provider_id": "D001"
+    }
+  ],
+  "declines": []
+}

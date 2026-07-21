@@ -1,0 +1,80 @@
+[
+  {
+    "tool": "get_current_appointment",
+    "arguments": {
+      "appointment_id": "A201"
+    },
+    "result": {
+      "appointment_id": "A201",
+      "patient_id": "P001",
+      "provider_id": "D001",
+      "slot_id": "SH200",
+      "start": "2026-10-20T10:00:00",
+      "status": "booked"
+    }
+  },
+  {
+    "tool": "get_patient",
+    "arguments": {
+      "patient_id": "P001"
+    },
+    "result": {
+      "patient_id": "P001",
+      "name": "Alex Morgan",
+      "insurance": "BlueShield",
+      "age": 26,
+      "preferred_location": "Downtown",
+      "authorized_proxies": [],
+      "referrals": {
+        "cardiology": {
+          "status": "expired",
+          "expires": "2026-09-01"
+        },
+        "neurology": {
+          "status": "none",
+          "expires": null
+        }
+      }
+    }
+  },
+  {
+    "tool": "list_appointments",
+    "arguments": {},
+    "result": [
+      {
+        "appointment_id": "A201",
+        "patient_id": "P001",
+        "provider_id": "D001",
+        "slot_id": "SH200",
+        "start": "2026-10-20T10:00:00",
+        "status": "booked"
+      }
+    ]
+  },
+  {
+    "tool": "search_available_slots",
+    "arguments": {
+      "appointment_id": "A201",
+      "date": "2026-10-17",
+      "weekday": null,
+      "min_hour": 0,
+      "max_hour": null,
+      "same_provider": true
+    },
+    "result": []
+  },
+  {
+    "tool": "list_appointments",
+    "arguments": {},
+    "result": [
+      {
+        "appointment_id": "A201",
+        "patient_id": "P001",
+        "provider_id": "D001",
+        "slot_id": "SH200",
+        "start": "2026-10-20T10:00:00",
+        "status": "booked"
+      }
+    ]
+  }
+]

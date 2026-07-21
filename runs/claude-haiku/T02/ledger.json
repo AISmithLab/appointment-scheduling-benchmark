@@ -1,0 +1,19 @@
+{
+  "appointments": [
+    {
+      "appointment_id": "A001",
+      "patient_id": "P001",
+      "provider_id": "D001",
+      "slot_id": "S090",
+      "start": "2026-09-10T09:00:00",
+      "status": "booked"
+    }
+  ],
+  "reschedule_history": [],
+  "declines": [
+    {
+      "appointment_id": "A001",
+      "reason": "No available slots found on 2026-09-16 after 5 PM with the same provider (Dr. Lee, dermatology)"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "appointment": {
+    "appointment_id": "A501",
+    "patient_id": "P001",
+    "provider_id": "D001",
+    "slot_id": "SH502",
+    "start": "2026-10-16T15:00:00",
+    "status": "booked"
+  }
+}

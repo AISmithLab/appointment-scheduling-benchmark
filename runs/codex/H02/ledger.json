@@ -1,0 +1,14 @@
+{
+  "appointments": [
+    {
+      "appointment_id": "A201",
+      "patient_id": "P001",
+      "provider_id": "D001",
+      "slot_id": "SH200",
+      "start": "2026-10-20T10:00:00",
+      "status": "booked"
+    }
+  ],
+  "reschedule_history": [],
+  "declines": []
+}

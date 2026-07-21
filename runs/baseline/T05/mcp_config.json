@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "appointment": {
+      "command": "/opt/pyvenv/bin/python",
+      "args": [
+        "/mnt/data/appointment-benchmark-haiku-sonnet-codex/server/appointment_server.py"
+      ],
+      "env": {
+        "APPOINTMENT_SNAPSHOT": "/mnt/data/appointment-benchmark-haiku-sonnet-codex/runs/baseline/T05/snapshot.json",
+        "APPOINTMENT_LEDGER": "/mnt/data/appointment-benchmark-haiku-sonnet-codex/runs/baseline/T05/ledger.json",
+        "APPOINTMENT_CALLS_LOG": "/mnt/data/appointment-benchmark-haiku-sonnet-codex/runs/baseline/T05/tool_calls.json"
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "task_id": "T04",
+  "task_name": "Wrong-specialty trap",
+  "skill": "specialty constraint",
+  "expected_action": "reschedule",
+  "expected_slot_id": "S302",
+  "final_slot_id": "S302",
+  "passed": true,
+  "reasons": [],
+  "n_tool_calls": 7,
+  "n_failed_tool_calls": 0,
+  "valid_candidates": [
+    "S302"
+  ],
+  "agent": "claude-sonnet",
+  "agent_kind": "claude",
+  "foundation_model": "sonnet",
+  "exit_code": 0,
+  "timed_out": false,
+  "wall_seconds": 21.1,
+  "cost_usd": 0.0970348,
+  "output_tokens": 1003
+}

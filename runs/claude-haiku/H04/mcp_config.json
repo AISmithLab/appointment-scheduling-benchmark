@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "appointment": {
+      "command": "C:\\Users\\Cindy\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+      "args": [
+        "C:\\Users\\Cindy\\Downloads\\appointment-benchmark-haiku-sonnet-codex\\appointment-benchmark-haiku-sonnet-codex\\server\\appointment_server.py"
+      ],
+      "env": {
+        "APPOINTMENT_SNAPSHOT": "C:\\Users\\Cindy\\Downloads\\appointment-benchmark-haiku-sonnet-codex\\appointment-benchmark-haiku-sonnet-codex\\runs\\claude-haiku\\H04\\snapshot.json",
+        "APPOINTMENT_LEDGER": "C:\\Users\\Cindy\\Downloads\\appointment-benchmark-haiku-sonnet-codex\\appointment-benchmark-haiku-sonnet-codex\\runs\\claude-haiku\\H04\\ledger.json",
+        "APPOINTMENT_CALLS_LOG": "C:\\Users\\Cindy\\Downloads\\appointment-benchmark-haiku-sonnet-codex\\appointment-benchmark-haiku-sonnet-codex\\runs\\claude-haiku\\H04\\tool_calls.json"
+      }
+    }
+  }
+}

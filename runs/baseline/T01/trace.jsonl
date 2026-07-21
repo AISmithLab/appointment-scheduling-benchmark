@@ -1,0 +1,21 @@
+{
+  "status": "success",
+  "appointment": {
+    "appointment_id": "A001",
+    "patient_id": "P001",
+    "provider_id": "D001",
+    "slot_id": "S102",
+    "start": "2026-09-14T15:00:00",
+    "status": "booked"
+  }
+}
+[
+  {
+    "appointment_id": "A001",
+    "patient_id": "P001",
+    "provider_id": "D001",
+    "slot_id": "S102",
+    "start": "2026-09-14T15:00:00",
+    "status": "booked"
+  }
+]

@@ -1,0 +1,24 @@
+{
+  "task_id": "H06",
+  "task_name": "Location, specialty, and insurance intersection",
+  "suite": "hard",
+  "skill": "multi-constraint candidate filtering",
+  "expected_action": "reschedule",
+  "expected_slot_id": "SH603",
+  "final_slot_id": "SH603",
+  "passed": true,
+  "reasons": [],
+  "n_tool_calls": 9,
+  "n_failed_tool_calls": 0,
+  "valid_candidates": [
+    "SH603"
+  ],
+  "agent": "claude-haiku",
+  "agent_kind": "claude",
+  "foundation_model": "haiku",
+  "exit_code": 0,
+  "timed_out": false,
+  "wall_seconds": 36.85,
+  "cost_usd": 0.0400848,
+  "output_tokens": 2396
+}

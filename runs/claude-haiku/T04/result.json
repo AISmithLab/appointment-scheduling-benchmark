@@ -1,0 +1,23 @@
+{
+  "task_id": "T04",
+  "task_name": "Wrong-specialty trap",
+  "skill": "specialty constraint",
+  "expected_action": "reschedule",
+  "expected_slot_id": "S302",
+  "final_slot_id": "S302",
+  "passed": true,
+  "reasons": [],
+  "n_tool_calls": 7,
+  "n_failed_tool_calls": 0,
+  "valid_candidates": [
+    "S302"
+  ],
+  "agent": "claude-haiku",
+  "agent_kind": "claude",
+  "foundation_model": "haiku",
+  "exit_code": 0,
+  "timed_out": false,
+  "wall_seconds": 30.52,
+  "cost_usd": 0.0342602,
+  "output_tokens": 2015
+}

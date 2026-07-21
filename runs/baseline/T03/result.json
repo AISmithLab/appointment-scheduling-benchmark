@@ -1,0 +1,21 @@
+{
+  "task_id": "T03",
+  "task_name": "Insurance mismatch trap",
+  "skill": "insurance constraint",
+  "expected_action": "reschedule",
+  "expected_slot_id": "S202",
+  "final_slot_id": "S202",
+  "passed": true,
+  "reasons": [],
+  "n_tool_calls": 7,
+  "n_failed_tool_calls": 0,
+  "valid_candidates": [
+    "S202"
+  ],
+  "agent": "baseline",
+  "agent_kind": "baseline",
+  "foundation_model": null,
+  "exit_code": 0,
+  "timed_out": false,
+  "wall_seconds": 1.2
+}

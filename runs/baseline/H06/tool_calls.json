@@ -1,0 +1,167 @@
+[
+  {
+    "tool": "get_current_appointment",
+    "arguments": {
+      "appointment_id": "A601"
+    },
+    "result": {
+      "appointment_id": "A601",
+      "patient_id": "P001",
+      "provider_id": "D001",
+      "slot_id": "SH600",
+      "start": "2026-10-30T10:00:00",
+      "status": "booked"
+    }
+  },
+  {
+    "tool": "get_patient",
+    "arguments": {
+      "patient_id": "P001"
+    },
+    "result": {
+      "patient_id": "P001",
+      "name": "Alex Morgan",
+      "insurance": "BlueShield",
+      "age": 26,
+      "preferred_location": "Downtown",
+      "authorized_proxies": [],
+      "referrals": {
+        "cardiology": {
+          "status": "expired",
+          "expires": "2026-09-01"
+        },
+        "neurology": {
+          "status": "none",
+          "expires": null
+        }
+      }
+    }
+  },
+  {
+    "tool": "list_appointments",
+    "arguments": {},
+    "result": [
+      {
+        "appointment_id": "A601",
+        "patient_id": "P001",
+        "provider_id": "D001",
+        "slot_id": "SH600",
+        "start": "2026-10-30T10:00:00",
+        "status": "booked"
+      }
+    ]
+  },
+  {
+    "tool": "search_available_slots",
+    "arguments": {
+      "appointment_id": "A601",
+      "date": "2026-10-19",
+      "weekday": null,
+      "min_hour": 13,
+      "max_hour": null,
+      "same_provider": false
+    },
+    "result": [
+      {
+        "slot_id": "SH601",
+        "provider_id": "D003",
+        "start": "2026-10-19T13:30:00",
+        "available": true
+      },
+      {
+        "slot_id": "SH602",
+        "provider_id": "D002",
+        "start": "2026-10-19T14:00:00",
+        "available": true
+      },
+      {
+        "slot_id": "SH603",
+        "provider_id": "D001",
+        "start": "2026-10-19T15:00:00",
+        "available": true
+      }
+    ]
+  },
+  {
+    "tool": "get_provider",
+    "arguments": {
+      "provider_id": "D003"
+    },
+    "result": {
+      "provider_id": "D003",
+      "name": "Dr. Gomez",
+      "specialty": "dermatology",
+      "accepted_insurance": [
+        "BlueShield",
+        "UnitedHealthcare"
+      ],
+      "location": "Uptown",
+      "pediatric_eligible": true
+    }
+  },
+  {
+    "tool": "get_provider",
+    "arguments": {
+      "provider_id": "D002"
+    },
+    "result": {
+      "provider_id": "D002",
+      "name": "Dr. Patel",
+      "specialty": "dermatology",
+      "accepted_insurance": [
+        "Aetna"
+      ],
+      "location": "Downtown",
+      "pediatric_eligible": true
+    }
+  },
+  {
+    "tool": "get_provider",
+    "arguments": {
+      "provider_id": "D001"
+    },
+    "result": {
+      "provider_id": "D001",
+      "name": "Dr. Lee",
+      "specialty": "dermatology",
+      "accepted_insurance": [
+        "BlueShield",
+        "Aetna"
+      ],
+      "location": "Downtown",
+      "pediatric_eligible": false
+    }
+  },
+  {
+    "tool": "reschedule_appointment",
+    "arguments": {
+      "appointment_id": "A601",
+      "new_slot_id": "SH603"
+    },
+    "result": {
+      "status": "success",
+      "appointment": {
+        "appointment_id": "A601",
+        "patient_id": "P001",
+        "provider_id": "D001",
+        "slot_id": "SH603",
+        "start": "2026-10-19T15:00:00",
+        "status": "booked"
+      }
+    }
+  },
+  {
+    "tool": "list_appointments",
+    "arguments": {},
+    "result": [
+      {
+        "appointment_id": "A601",
+        "patient_id": "P001",
+        "provider_id": "D001",
+        "slot_id": "SH603",
+        "start": "2026-10-19T15:00:00",
+        "status": "booked"
+      }
+    ]
+  }
+]

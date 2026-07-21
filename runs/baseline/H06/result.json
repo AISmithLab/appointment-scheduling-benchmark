@@ -1,0 +1,22 @@
+{
+  "task_id": "H06",
+  "task_name": "Location, specialty, and insurance intersection",
+  "suite": "hard",
+  "skill": "multi-constraint candidate filtering",
+  "expected_action": "reschedule",
+  "expected_slot_id": "SH603",
+  "final_slot_id": "SH603",
+  "passed": true,
+  "reasons": [],
+  "n_tool_calls": 9,
+  "n_failed_tool_calls": 0,
+  "valid_candidates": [
+    "SH603"
+  ],
+  "agent": "baseline",
+  "agent_kind": "baseline",
+  "foundation_model": null,
+  "exit_code": 0,
+  "timed_out": false,
+  "wall_seconds": 0.3
+}

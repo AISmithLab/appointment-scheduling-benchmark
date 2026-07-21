@@ -1,0 +1,27 @@
+{
+  "task_id": "H01",
+  "task_name": "Vague early-afternoon request with policy",
+  "suite": "hard",
+  "skill": "policy retrieval, vague time interpretation, soft preference",
+  "expected_action": "reschedule",
+  "expected_slot_id": "SH103",
+  "final_slot_id": "SH801",
+  "passed": false,
+  "reasons": [
+    "Expected final slot SH103, but found SH801.",
+    "The correct reschedule was not recorded in reschedule_history."
+  ],
+  "n_tool_calls": 14,
+  "n_failed_tool_calls": 0,
+  "valid_candidates": [
+    "SH103"
+  ],
+  "agent": "claude-haiku",
+  "agent_kind": "claude",
+  "foundation_model": "haiku",
+  "exit_code": 0,
+  "timed_out": false,
+  "wall_seconds": 103.78,
+  "cost_usd": 0.09485835000000002,
+  "output_tokens": 1837
+}

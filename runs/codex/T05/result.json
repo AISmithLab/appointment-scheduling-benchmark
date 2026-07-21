@@ -1,0 +1,23 @@
+{
+  "task_id": "T05",
+  "task_name": "Unavailable-slot trap",
+  "skill": "availability constraint",
+  "expected_action": "reschedule",
+  "expected_slot_id": "S402",
+  "final_slot_id": "S402",
+  "passed": true,
+  "reasons": [],
+  "n_tool_calls": 6,
+  "n_failed_tool_calls": 0,
+  "valid_candidates": [
+    "S402"
+  ],
+  "agent": "codex",
+  "agent_kind": "codex",
+  "foundation_model": null,
+  "exit_code": 0,
+  "timed_out": false,
+  "wall_seconds": 24.43,
+  "cost_usd": null,
+  "output_tokens": 451
+}

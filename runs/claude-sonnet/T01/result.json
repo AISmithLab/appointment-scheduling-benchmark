@@ -1,0 +1,23 @@
+{
+  "task_id": "T01",
+  "task_name": "Same-provider Monday afternoon reschedule",
+  "skill": "provider and time constraints",
+  "expected_action": "reschedule",
+  "expected_slot_id": "S102",
+  "final_slot_id": "S102",
+  "passed": true,
+  "reasons": [],
+  "n_tool_calls": 6,
+  "n_failed_tool_calls": 0,
+  "valid_candidates": [
+    "S102"
+  ],
+  "agent": "claude-sonnet",
+  "agent_kind": "claude",
+  "foundation_model": "sonnet",
+  "exit_code": 0,
+  "timed_out": false,
+  "wall_seconds": 24.93,
+  "cost_usd": 0.17975019999999997,
+  "output_tokens": 834
+}

@@ -1,0 +1,87 @@
+[
+  {
+    "tool": "get_policy",
+    "arguments": {},
+    "result": "# Synthetic Clinic Scheduling Policy\n\nThese rules apply only inside this benchmark's synthetic clinic.\n\n1. **In-network care:** A provider is in network only when the patient's insurance appears in the provider's `accepted_insurance` list.\n2. **Early afternoon:** Interpret \u201cearly afternoon\u201d as 1:00 PM inclusive through 3:00 PM exclusive.\n3. **Referral requirement:** Cardiology and neurology appointments require an active, unexpired referral for that specialty. An expired or missing referral means the agent must not reschedule and should record a decline.\n4. **Pediatric eligibility:** Patients under age 18 may be scheduled only with a provider whose `pediatric_eligible` field is true.\n5. **Authorized requester:** Only the patient or an explicitly authorized proxy may change an adult patient's appointment. A roommate, friend, or other unlisted person is not authorized.\n6. **Conditional no-op:** When the requester says to leave the appointment unchanged unless a condition is satisfied, failure to satisfy the condition requires a true no-op: do not reschedule and do not record a decline.\n7. **Changing availability:** A slot may become unavailable between search and booking. After such a tool error, search again and use the next valid option rather than claiming success.\n8. **No double-booking:** Do not place the same patient into two appointments with the same start time.\n"
+  },
+  {
+    "tool": "get_current_appointment",
+    "arguments": {
+      "appointment_id": "A701"
+    },
+    "result": {
+      "appointment_id": "A701",
+      "patient_id": "P001",
+      "provider_id": "D001",
+      "slot_id": "SH700",
+      "start": "2026-10-30T10:00:00",
+      "status": "booked"
+    }
+  },
+  {
+    "tool": "get_patient",
+    "arguments": {
+      "patient_id": "P001"
+    },
+    "result": {
+      "patient_id": "P001",
+      "name": "Alex Morgan",
+      "insurance": "BlueShield",
+      "age": 26,
+      "preferred_location": "Downtown",
+      "authorized_proxies": [],
+      "referrals": {
+        "cardiology": {
+          "status": "expired",
+          "expires": "2026-09-01"
+        },
+        "neurology": {
+          "status": "none",
+          "expires": null
+        }
+      }
+    }
+  },
+  {
+    "tool": "list_appointments",
+    "arguments": {},
+    "result": [
+      {
+        "appointment_id": "A701",
+        "patient_id": "P001",
+        "provider_id": "D001",
+        "slot_id": "SH700",
+        "start": "2026-10-30T10:00:00",
+        "status": "booked"
+      }
+    ]
+  },
+  {
+    "tool": "decline_reschedule",
+    "arguments": {
+      "appointment_id": "A701",
+      "reason": "The requester is not authorized to change this adult patient's appointment."
+    },
+    "result": {
+      "status": "declined",
+      "decline": {
+        "appointment_id": "A701",
+        "reason": "The requester is not authorized to change this adult patient's appointment."
+      }
+    }
+  },
+  {
+    "tool": "list_appointments",
+    "arguments": {},
+    "result": [
+      {
+        "appointment_id": "A701",
+        "patient_id": "P001",
+        "provider_id": "D001",
+        "slot_id": "SH700",
+        "start": "2026-10-30T10:00:00",
+        "status": "booked"
+      }
+    ]
+  }
+]

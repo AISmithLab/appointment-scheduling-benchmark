@@ -1,0 +1,19 @@
+{
+  "_comment": "Evaluation agents. Haiku and Sonnet use the same Claude Code harness with different foundation models. Codex uses the Codex CLI as a different harness. The baseline is a deterministic infrastructure check and is not an AI agent result.",
+  "baseline": {
+    "kind": "baseline"
+  },
+  "claude-haiku": {
+    "kind": "claude",
+    "model": "haiku"
+  },
+  "claude-sonnet": {
+    "kind": "claude",
+    "model": "sonnet"
+  },
+  "codex": {
+    "kind": "codex",
+    "model": null,
+    "note": "Uses the Codex CLI account default model. Headless MCP currently requires --dangerously-bypass-approvals-and-sandbox; the runner requires explicit --allow-unsafe-codex acknowledgement."
+  }
+}

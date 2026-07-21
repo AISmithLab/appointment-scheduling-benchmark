@@ -1,0 +1,19 @@
+{
+  "appointments": [
+    {
+      "appointment_id": "A701",
+      "patient_id": "P001",
+      "provider_id": "D001",
+      "slot_id": "SH700",
+      "start": "2026-10-30T10:00:00",
+      "status": "booked"
+    }
+  ],
+  "reschedule_history": [],
+  "declines": [
+    {
+      "appointment_id": "A701",
+      "reason": "Requester is not authorized. Policy requires only the patient or an explicitly authorized proxy may change an adult patient's appointment. Requester is a roommate and explicitly stated they are not listed as an authorized proxy."
+    }
+  ]
+}

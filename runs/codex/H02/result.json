@@ -1,0 +1,22 @@
+{
+  "task_id": "H02",
+  "task_name": "Conditional change requiring true no-op",
+  "suite": "hard",
+  "skill": "conditional action and no-op behavior",
+  "expected_action": "noop",
+  "expected_slot_id": null,
+  "final_slot_id": "SH200",
+  "passed": true,
+  "reasons": [],
+  "n_tool_calls": 7,
+  "n_failed_tool_calls": 0,
+  "valid_candidates": [],
+  "agent": "codex",
+  "agent_kind": "codex",
+  "foundation_model": null,
+  "exit_code": 0,
+  "timed_out": false,
+  "wall_seconds": 30.42,
+  "cost_usd": null,
+  "output_tokens": 420
+}

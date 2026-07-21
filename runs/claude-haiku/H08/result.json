@@ -1,0 +1,24 @@
+{
+  "task_id": "H08",
+  "task_name": "Pediatric provider eligibility",
+  "suite": "hard",
+  "skill": "policy retrieval and age-based eligibility",
+  "expected_action": "reschedule",
+  "expected_slot_id": "SH802",
+  "final_slot_id": "SH802",
+  "passed": true,
+  "reasons": [],
+  "n_tool_calls": 7,
+  "n_failed_tool_calls": 0,
+  "valid_candidates": [
+    "SH802"
+  ],
+  "agent": "claude-haiku",
+  "agent_kind": "claude",
+  "foundation_model": "haiku",
+  "exit_code": 0,
+  "timed_out": false,
+  "wall_seconds": 30.82,
+  "cost_usd": 0.0352535,
+  "output_tokens": 2041
+}

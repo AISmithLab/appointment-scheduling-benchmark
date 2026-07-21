@@ -1,0 +1,19 @@
+{
+  "appointments": [
+    {
+      "appointment_id": "A301",
+      "patient_id": "P001",
+      "provider_id": "D004",
+      "slot_id": "SH300",
+      "start": "2026-10-30T10:00:00",
+      "status": "booked"
+    }
+  ],
+  "reschedule_history": [],
+  "declines": [
+    {
+      "appointment_id": "A301",
+      "reason": "Patient P001's cardiology referral expired 2026-09-01 (current date 2026-10-08). Per clinic policy, cardiology appointments require an active, unexpired referral, so A301 cannot be rescheduled regardless of network status."
+    }
+  ]
+}

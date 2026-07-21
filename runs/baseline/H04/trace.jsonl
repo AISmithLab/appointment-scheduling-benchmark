@@ -1,0 +1,12 @@
+Booking failed for SH401: Slot SH401 became unavailable before booking. Search again for the next valid option.
+{
+  "status": "success",
+  "appointment": {
+    "appointment_id": "A401",
+    "patient_id": "P001",
+    "provider_id": "D001",
+    "slot_id": "SH402",
+    "start": "2026-10-15T15:00:00",
+    "status": "booked"
+  }
+}

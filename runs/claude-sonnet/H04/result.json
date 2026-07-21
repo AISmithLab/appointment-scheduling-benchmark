@@ -1,0 +1,24 @@
+{
+  "task_id": "H04",
+  "task_name": "Availability race and recovery",
+  "suite": "hard",
+  "skill": "tool-error recovery and re-planning",
+  "expected_action": "reschedule",
+  "expected_slot_id": "SH402",
+  "final_slot_id": "SH402",
+  "passed": true,
+  "reasons": [],
+  "n_tool_calls": 9,
+  "n_failed_tool_calls": 1,
+  "valid_candidates": [
+    "SH402"
+  ],
+  "agent": "claude-sonnet",
+  "agent_kind": "claude",
+  "foundation_model": "sonnet",
+  "exit_code": 0,
+  "timed_out": false,
+  "wall_seconds": 46.22,
+  "cost_usd": 0.1569517,
+  "output_tokens": 2914
+}
